@@ -5,6 +5,16 @@ const Statistics = ({ good, neutral, bad }) => {
   let avr = (good * 1 + neutral * 0 + bad * -1) / total;
   let posPercent = (good / total) * 100;
 
+  // if(total <= 0){
+  //   return (
+  //     <div>
+  //           <h1>Statistics</h1>
+  //           <div>No feedback given</div>
+  //     </div>
+      
+  //   )
+  // }
+
   return (
     <div>
       <h1>Statistics</h1>
